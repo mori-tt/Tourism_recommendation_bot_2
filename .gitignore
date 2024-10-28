@@ -1,0 +1,39 @@
+## Summary
+このGitignoreファイルは、Poetry環境でGradioアプリを作成する際に、不要なファイルやディレクトリを無視するように設定されています。
+
+---
+
+## Gitignore Content
+
+```gitignore
+# Ignore virtual environment files
+.venv/
+venv/
+env/
+ENV/
+
+# Ignore Poetry files
+poetry.lock
+pyproject.toml
+
+# Ignore Gradio cache and logs
+.gradio/
+logs/
+
+# Ignore local development settings
+*.log
+*.sqlite3
+
+# Ignore IDE and editor files
+.idea/
+.vscode/
+*.pyc
+
+# Ignore system and temporary files
+.DS_Store
+Thumbs.db
+__pycache__/
+*.bak
+*.swp
+
+.env
